@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36.001" height="36" viewBox="0 0 36.001 36">
+  <defs>
+    <filter id="Subtraction_21" x="10.014" y="0" width="25.986" height="25.982" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Subtraction_19" x="0" y="12.937" width="23.063" height="23.063" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Betting" transform="translate(3 1.653)">
+    <g transform="matrix(1, 0, 0, 1, -3, -1.65)" filter="url(#Subtraction_21)">
+      <path id="Subtraction_21-2" data-name="Subtraction 21" d="M9.909,19.983a5,5,0,0,1-2.6-.723V17.672a5.006,5.006,0,0,0-5-5H.837a5,5,0,0,1,.691-6.365L6.609,1.4a5.006,5.006,0,0,1,7.07.123l4.907,5.08a5.006,5.006,0,0,1-.124,7.07l-5.08,4.906A4.975,4.975,0,0,1,9.909,19.983ZM9.4,14.548h0a1.705,1.705,0,1,0,1.227.52,1.7,1.7,0,0,0-1.227-.52ZM10,8.284h0a1.7,1.7,0,1,0,1.227.52A1.7,1.7,0,0,0,10,8.285Zm.1-5.79h0a1.7,1.7,0,1,0,1.228.52,1.7,1.7,0,0,0-1.228-.52Z" transform="translate(13.01 2)" fill="#0081ff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -3, -1.65)" filter="url(#Subtraction_19)">
+      <path id="Subtraction_19-2" data-name="Subtraction 19" d="M12.064,17.063H5a5.006,5.006,0,0,1-5-5V5A5.006,5.006,0,0,1,5,0h7.063a5.006,5.006,0,0,1,5,5v7.063A5.005,5.005,0,0,1,12.064,17.063Zm.563-5.46a1.706,1.706,0,1,0,1.706,1.706A1.708,1.708,0,0,0,12.626,11.6Zm-8.19,0a1.706,1.706,0,1,0,1.706,1.706A1.708,1.708,0,0,0,4.436,11.6ZM8.531,6.825a1.706,1.706,0,1,0,1.706,1.706A1.708,1.708,0,0,0,8.531,6.825Zm4.1-4.1a1.706,1.706,0,1,0,1.706,1.706A1.708,1.708,0,0,0,12.626,2.73Zm-8.19,0A1.706,1.706,0,1,0,6.143,4.436,1.708,1.708,0,0,0,4.436,2.73Z" transform="translate(3 14.94)" fill="#0081ff"/>
+    </g>
+  </g>
+</svg>
