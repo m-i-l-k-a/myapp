@@ -1,4 +1,3 @@
-import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -88,7 +87,7 @@ class _HomePageState extends State<HomePage> {
                       Row(
                         children: [
                           InkWell(
-                            child: Text("View All"),
+                            child: const Text("View All"),
                             onTap: () {
                               Navigator.of(context).push(MaterialPageRoute(
                                   builder: (BuildContext context) =>

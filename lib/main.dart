@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:myap/home_page.dart';
+import 'package:myap/firstmonie_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,6 +17,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   String respDesc = '';
   List<Map<String, String>> otpList = [];
+  Map<String, String>? selectedOtp;
 
   @override
   void initState() {
@@ -56,31 +57,45 @@ class _MyAppState extends State<MyApp> {
             children: [
               Text('Respdesc: $respDesc'),
               SizedBox(height: 16),
-              Text('OTP List:', style: TextStyle(fontWeight: FontWeight.bold)),
-              Column(
-                children: otpList
-                    .map((otp) => ListTile(
-                  title: Text('OTP: ${otp['otp']}'),
-                  subtitle: Text('Status: ${otp['status']}'),
+              const Text('Select OTP:',
+                  style: TextStyle(fontWeight: FontWeight.bold)),
+              DropdownButton<Map<String, String>>(
+                value: selectedOtp,
+                onChanged: (otp) {
+                  setState(() {
+                    selectedOtp = otp;
+                  });
+                },
+                items: otpList
+                    .map((otp) => DropdownMenuItem<Map<String, String>>(
+                  value: otp,
+                  child: Text('${otp['otp']}'),
                 ))
                     .toList(),
               ),
-              Builder(
-                  builder: (context) {
-                    return Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        TextButton(onPressed: (){
+              selectedOtp != null
+                  ? const Visibility(
+                visible: true,
+                child: SizedBox(
+                  height: 16,
+                  child: Text('SELECTED SUCCESSFULLY'),
+                ),
+              )
+                  : SizedBox(),
+              Builder(builder: (context) {
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    TextButton(
+                        onPressed: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (BuildContext context) =>
-                                  HomePage()));
-                        }, child: Text("fetch data")),
-
-                      ],
-                    );
-                  }
-              ),
+                              builder: (BuildContext context) => FirstMoniePage()));
+                        },
+                        child: Text("fetch data")),
+                  ],
+                );
+              }),
             ],
           ),
         ),
@@ -88,3 +103,7 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
+
+
+
+
