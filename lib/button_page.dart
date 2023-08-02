@@ -33,11 +33,11 @@ class _ButtonPageState extends State<ButtonPage> {
             borderRadius: BorderRadius.circular(40),
           ),
 
-          child: Padding(
-            padding: const EdgeInsets.only(left: 10, top:28 ),
+          child: const Padding(
+            padding: EdgeInsets.only(left: 10, top:28 ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
-              children:  const [
+              children:  [
                 Text("Linked Accounts",style: TextStyle(
                     color: Color(0XFF000000),fontSize: 18,fontWeight:FontWeight.bold,
 
@@ -70,7 +70,7 @@ class _ButtonPageState extends State<ButtonPage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    child: Column(
+                    child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
 
                       children: [
@@ -81,10 +81,10 @@ class _ButtonPageState extends State<ButtonPage> {
 
                           children: [
                            Padding(
-                             padding: const EdgeInsets.all(5.0),
+                             padding: EdgeInsets.all(5.0),
                              child: Row(
 
-                                  children:    const [
+                                  children:    [
 
                                     Text("AA",style: TextStyle(
                                       fontSize: 15,fontWeight: FontWeight.bold,color: Color(0XFF0081FF),
@@ -101,10 +101,10 @@ class _ButtonPageState extends State<ButtonPage> {
                     ),
 
                   ),
-              SizedBox(width: 10,),
+              const SizedBox(width: 10,),
 
-              Padding(
-                padding: const EdgeInsets.only(right: 0),
+              const Padding(
+                padding: EdgeInsets.only(right: 0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
@@ -113,7 +113,7 @@ class _ButtonPageState extends State<ButtonPage> {
                     Row(
 
 
-                      children: const [
+                      children: [
                         Text("Abaranyi Tom"),
                         SizedBox(height: 20,),
 
@@ -127,10 +127,10 @@ class _ButtonPageState extends State<ButtonPage> {
                   ],
                 ),
               ),
-                  Column(
+                  const Column(
                     mainAxisAlignment: MainAxisAlignment.end,
 
-                    children: const [
+                    children: [
                       Icon(Icons.delete)
                     ],
                   )
@@ -152,7 +152,7 @@ class _ButtonPageState extends State<ButtonPage> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: Column(
+                  child: const Column(
                     mainAxisAlignment: MainAxisAlignment.center,
 
                     children: [
@@ -163,10 +163,10 @@ class _ButtonPageState extends State<ButtonPage> {
 
                         children: [
                           Padding(
-                            padding: const EdgeInsets.all(5.0),
+                            padding: EdgeInsets.all(5.0),
                             child: Row(
 
-                              children:    const [
+                              children:    [
 
                                 Text("AA",style: TextStyle(
                                   fontSize: 15,fontWeight: FontWeight.bold,color: Color(0XFF0081FF),
@@ -183,10 +183,10 @@ class _ButtonPageState extends State<ButtonPage> {
                   ),
 
                 ),
-                SizedBox(width: 10,),
+                const SizedBox(width: 10,),
 
-                Padding(
-                  padding: const EdgeInsets.only(right: 0),
+                const Padding(
+                  padding: EdgeInsets.only(right: 0),
                   child: Column(
 
                     children: [
@@ -194,21 +194,21 @@ class _ButtonPageState extends State<ButtonPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
 
 
-                        children: const [
+                        children: [
                           Text("Abaranyi Tom",),
                           SizedBox(height: 20,),
 
                         ],
                       ),
                       Column(
-                        children: const [
+                        children: [
                           Text("2223334444")
                         ],
                       )
                     ],
                   ),
                 ),
-                Column(
+                const Column(
                   mainAxisAlignment: MainAxisAlignment.end,
 
                   children: [
