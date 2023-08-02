@@ -195,7 +195,7 @@ class _ButtonPageState extends State<ButtonPage> {
 
 
                         children: [
-                          Text("Abaranyi Tom",),
+                          Text("Abran Tom",),
                           SizedBox(height: 20,),
 
                         ],
